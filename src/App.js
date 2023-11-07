@@ -3,15 +3,33 @@ import './App.css';
 import Search from "./Search"
 import "./Search.css"
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Weather-Search-Engine</h1>
-        <Search/>
-      </header>
-    </div>
+      <div className="container">
+        <Weather defaultCity="New York" />
+
+        <footer>
+          This project was coded by{" "}
+          <a href="./" target="_blank">
+            Kirtanya Bhagwandin
+          </a>{" "}
+          and is{" "}
+          <a
+            href="https://github.com/kirtany/Search-enginReact"
+            target="_blank"
+          >
+            open-sourced on GitHub
+          </a>{" "}
+          and{" "}
+          <a
+            href="./"
+            target="_blank"
+          >
+            hosted on Netlify
+          </a>
+        </footer>
+      </div>
+  </div>
   );
 }
-
-export default App;
