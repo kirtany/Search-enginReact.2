@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Weatherforcast from "./Weatherforcast";
 
 export default function WeatherSearch() {
   let [city, setCity] = useState(" ");
@@ -53,7 +54,9 @@ export default function WeatherSearch() {
             <img src={weather.icon} alt={weather.description} />{" "}
           </li>
         </ul>
-      </div>
+      </div> 
+      
+      <Weatherforcast/>
     );
   } else {
     return form;
